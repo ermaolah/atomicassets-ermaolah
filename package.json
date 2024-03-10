@@ -1,5 +1,5 @@
 {
-  "name": "atomicassets",
+  "name": "atomicassets-ermaolah",
   "description": "js module to fetch data from the atomicassets NFT standard",
   "keywords": [
     "atomicassets",
@@ -8,14 +8,14 @@
     "eosio",
     "pinknetwork"
   ],
-  "author": "pink.network",
+  "author": "ermaolah.network",
   "homepage": "https://atomicassets.io",
   "bugs": {
-    "url": "https://github.com/pinknetworkx/atomicassets-js/issues",
-    "email": "pinknetworkx@gmail.com"
+    "url": "https://github.com/ermaolah/atomicassets-ermaolah/issues",
+    "email": "ermaolah@gmail.com"
   },
   "license": "MIT",
-  "version": "1.5.0",
+  "version": "2.1.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
