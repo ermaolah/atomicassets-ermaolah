@@ -2,8 +2,6 @@
 
 JS Library to read data from the atomicassets NFT standard.
 
-Contract / General Documentation can be found on [https://github.com/pink.gg/atomicassets-contract/wiki](https://github.com/pink.gg/atomicassets-contract/wiki)
-
 ## Usage
 
 This is a [Node.js](https://nodejs.org/en/) module available through the
@@ -11,12 +9,10 @@ This is a [Node.js](https://nodejs.org/en/) module available through the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```sh
-$ npm install atomicassets
+$ npm install atomicassets-ermaolah
 ```
 
 ### Initialize
-
-Web library can be found in the [dist](https://github.com/pink.gg/atomicassets-js/blob/master/dist/atomicassets.js) folder
 
 ```javascript
 // standard import
@@ -30,8 +26,6 @@ import {ExplorerApi, RpcApi} from "atomicassets"
 AtomicAssets uses serialization to store data on the blockchain more efficiently. 
 The API classes will handle this for you but if you need to manually parse the data,
 the library provides you a serialize and deserialize function
-
-More information can be found [here](https://github.com/pink.gg/atomicassets-contract/wiki/Serialization)
 
 #### Example
 ```javascript
@@ -74,12 +68,6 @@ There are two methods available to fetch data from the blockchain.
 
 * **ExplorerAPI**: uses an hosted API which proves simple and fast REST API endpoints
 * **RpcAPI**: uses only native nodeos calls
-
-### Explorer API
-
-The explorer API uses [eosio-contract-api](https://github.com/pink.gg/eosio-contract-api) to query data about the NFTs. 
-A documentation of each endpoint and its responses can be found [here](https://test.wax.api.atomicassets.io/atomicassets/docs/#/).
-It is recommended to self-host the API for the best performance.
 
 
 #### Example
@@ -212,8 +200,6 @@ options
 The Explorer API has an `action` attribute which contains a helper class to construct contract actions 
 which can be pushed on chain with eosjs. 
 
-Detailed information about each action can be found [here](https://github.com/pink.gg/atomicassets-contract/wiki/Actions) 
-
 #### Types
 
 Each method returns the unmodified response from the API call. For more information look at the Models 
@@ -288,8 +274,7 @@ Caching can be disabled by explicitly setting cache to false
 The RPC API has an `action` attribute which contains a helper class to construct contract actions 
 which can be pushed on chain with eosjs. 
 
-Detailed information about each action can be found [here](https://github.com/pink.gg/atomicassets-contract/wiki/Actions) 
- 
+
 #### Types
 
 These classes represent table rows of the contract and consist of getter methods
